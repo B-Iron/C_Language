@@ -1,21 +1,24 @@
 #This is a makefile#
+
+#Syntax Rules#
 CC=gcc
 CFLAGS=-I.
 DEPS= myHeader.h
 OBJ= main.o f1.o f2.o f3.o
-#Syntax BODY#
-#Dependacy command for the header#
+#--Start of Syntax BODY--#
+#Dependacy for the header#
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
-#Makes all the files#
+#Target makes all the files which is made possiable by the Make Command#
 Test:$(OBJ)
 	gcc -o $@ $^ $(CFLAGS)
-#Execute command runs the '.exe'#
+#--End of Syntax Body--#
+#Execute Command runs the '.exe'#
 exec:
 	./Test
-#.PHONE is use to non conflict the 'clean' command with an actual file#
+#.PHONY is use to non conflict the 'clean' command with an actual file#
 .PHONY:clean
-#Clean Command#
+#Clean Command delets the files that you have made '.exe, .o, and .d'#
 clean:
 	del /f *.exe, *.o, *.d
 #You have finished!#
