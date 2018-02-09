@@ -1,4 +1,4 @@
-#This is a makefile	#
+#This is a makefile#
 CC=gcc
 CFLAGS=-I.
 DEPS= myHeader.h
