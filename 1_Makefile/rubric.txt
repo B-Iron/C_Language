@@ -7,3 +7,4 @@ Tasks:
 - Make all builds everything	   		      	      		  : XX/5
 - Make clean removes all generated files                 		  : XX/5
 - Make myprog build the the executable					  : XX/5
+P1: PASS

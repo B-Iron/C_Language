@@ -1,10 +1,10 @@
 #!/bin/bash
-if [ "$1" = "Grades.txt" ];then
+if [ "$1" = "rubric.txt" ];then
   echo "usage: $0 <output file>"
   echo "   output file - the file to save the grades in"
   exit 0;
 fi
-dest="Grades.txt"
+dest="rubric.txt"
 
 #Generate the students assignment
 make
