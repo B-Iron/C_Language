@@ -16,4 +16,4 @@ exec:
 #Clean Command#
 clean:
 	del /f *.exe, *.o, *.d
-#Finish#
+#You have finished#
