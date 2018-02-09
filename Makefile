@@ -9,7 +9,7 @@ OBJ= main.o f1.o f2.o f3.o
 #Dependacy for the header#
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
-#Target makes all the files which is made possiable by the Make Command#
+#Target makes all the files which is made possible by the Make Command#
 Test:$(OBJ)
 	gcc -o $@ $^ $(CFLAGS)
 #--End of Syntax Body--#
