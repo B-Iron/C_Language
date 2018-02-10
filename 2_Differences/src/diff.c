@@ -1,7 +1,7 @@
 /*******************************************************************************
  * file: diff.c
  * Main driver for file diff functinality
- * Author: 
+ * Author:
  * Sources: None
  ******************************************************************************/
 #include <stdio.h>
@@ -12,5 +12,5 @@
  * sends command line options to diff_utils and returns result
  ******************************************************************************/
 int main(int argc,char** argv){
-  return 0;
+    return diff_files_cmdline(argc,argv);
 }
